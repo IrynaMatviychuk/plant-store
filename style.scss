@@ -1,0 +1,11 @@
+@import './variables';
+@import './header';
+@import './main';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}

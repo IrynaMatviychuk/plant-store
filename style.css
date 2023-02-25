@@ -1,0 +1,251 @@
+header .top-nav-bar {
+  font-family: "Poppins", sans-serif;
+  background-color: #0C4B35;
+}
+header .top-nav-bar .container {
+  width: 100%;
+  padding: 0 15px;
+}
+header .top-nav-bar .contacts-lang {
+  padding: 20px 5px 15px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .top-nav-bar .contacts-lang .contacts {
+  display: flex;
+  gap: 30px;
+}
+header .top-nav-bar .contacts-lang .contacts .email a div, header .top-nav-bar .contacts-lang .contacts .call-number a div, header .top-nav-bar .contacts-lang .contacts .location a div {
+  display: none;
+}
+header .top-nav-bar .contacts-lang .contacts .email img, header .top-nav-bar .contacts-lang .contacts .call-number img, header .top-nav-bar .contacts-lang .contacts .location img {
+  width: 25px;
+  height: 25px;
+}
+header .top-nav-bar .contacts-lang .language {
+  width: 90px;
+  position: relative;
+}
+header .top-nav-bar .contacts-lang .language a {
+  display: block;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+}
+header .top-nav-bar .contacts-lang .language a img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+header .top-nav-bar .contacts-lang .language ul {
+  display: none;
+  border: 3px solid white;
+  border-radius: 10%;
+  position: absolute;
+  z-index: 10;
+  padding: 10px;
+}
+header .top-nav-bar .contacts-lang .language ul a {
+  display: block;
+}
+header .top-nav-bar .contacts-lang .language:hover ul {
+  display: block;
+  background-color: #0C4B35;
+}
+header .top-nav-bar .contacts-lang .language:hover ul li:hover a {
+  color: rgb(9, 18, 0);
+}
+header .nav-bar {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header .nav-bar .container {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-bar .container .logo a {
+  display: block;
+}
+header .nav-bar .container .logo a img {
+  width: 90px;
+  height: 40px;
+}
+header .nav-bar .container .menu-call {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  width: 110px;
+}
+header .nav-bar .container .menu-call .navbar-menu .btn-menu {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: #fff;
+}
+header .nav-bar .container .menu-call .navbar-menu .menu-ul {
+  display: none;
+}
+header .nav-bar .container .menu-call .btn-call {
+  background-color: #00730C;
+  width: 40px;
+  height: 34px;
+  border-radius: 10px;
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-bar .container .menu-call .btn-call img {
+  width: 20px;
+  height: 20px;
+}
+header .nav-bar .container .menu-call .btn-call a {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header .top-nav-bar .container {
+    width: 970px;
+    margin: auto;
+  }
+  header .top-nav-bar .contacts-lang .contacts .email a, header .top-nav-bar .contacts-lang .contacts .call-number a, header .top-nav-bar .contacts-lang .contacts .location a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  header .top-nav-bar .contacts-lang .contacts .email a div, header .top-nav-bar .contacts-lang .contacts .call-number a div, header .top-nav-bar .contacts-lang .contacts .location a div {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  header .nav-bar {
+    height: 80px;
+    padding: 15px 0;
+  }
+  header .nav-bar .container {
+    width: 970px;
+    padding: 0;
+    margin: auto;
+  }
+  header .nav-bar .container .logo a img {
+    width: 100px;
+    height: 45px;
+  }
+  header .nav-bar .container .menu-call {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 730px;
+  }
+  header .nav-bar .container .menu-call .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+  header .nav-bar .container .menu-call .navbar-menu .btn-menu {
+    display: none;
+  }
+  header .nav-bar .container .menu-call .navbar-menu .menu-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 520px;
+  }
+  header .nav-bar .container .menu-call .navbar-menu .menu-ul a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #212529;
+  }
+  header .nav-bar .container .menu-call .navbar-menu .menu-ul a img {
+    margin-left: 5px;
+  }
+  header .nav-bar .container .menu-call .btn-call {
+    width: 153px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 25px;
+  }
+  header .nav-bar .container .menu-call .btn-call img {
+    width: 30px;
+    height: 30px;
+  }
+  header .nav-bar .container .menu-call .btn-call a {
+    display: block;
+    margin-left: 7px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1920px) {
+  header .top-nav-bar .container {
+    width: 1418px;
+  }
+  header .nav-bar {
+    height: 85px;
+    padding: 15px 256px;
+  }
+  header .nav-bar .container {
+    width: 1408px;
+  }
+  header .nav-bar .container .logo a img {
+    width: 120px;
+    height: 55px;
+  }
+  header .nav-bar .container .menu-call {
+    width: 898px;
+  }
+  header .nav-bar .container .menu-call .navbar-menu .menu-ul {
+    width: 627px;
+  }
+  header .nav-bar .container .menu-call .navbar-menu .menu-ul a {
+    font-size: 16px;
+  }
+  header .nav-bar .container .menu-call .btn-call {
+    width: 170px;
+    height: 50px;
+    padding: 10px 35px;
+  }
+  header .nav-bar .container .menu-call .btn-call a {
+    font-size: 18px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}/*# sourceMappingURL=style.css.map */
