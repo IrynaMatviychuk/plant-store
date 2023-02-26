@@ -2,12 +2,13 @@ header {
          // top-nav-bar
     .top-nav-bar {
         font-family: "Poppins", sans-serif;
-        background-color: $color-header;        
+        background-color: $color-header;
         .container {
             width: 100%;
             padding: 0 15px;
         }
         .contacts-lang {
+            height: 55px;        
             padding: 20px 5px 15px 5px;
             display: flex;
             flex-wrap: wrap;
@@ -22,30 +23,32 @@ header {
                         }
                     }
                     img {
-                        width: 25px;
-                        height: 25px;
+                        width: 20px;
+                        height: 20px;
                     }
                 }
             }
 
             .language {
-                width: 90px;
+                width: 52px;
                 position: relative;
+                top: -3px;
                 a {
                     display: block;
                     position: relative;
                     font-family: "Nunito", sans-serif;
                     color: #fff;
                     text-decoration: none;
+                    font-size: 12px;
                     line-height: 25px;
                     padding-left: 5px;
                     font-family: "Poppins", sans-serif;
                     img {
-                        width: 20px;
-                        height: 20px;
+                        width: 15px;
+                        height: 15px;
                         position: absolute;
-                        top: 4px;
-                        right: 4px;
+                        top: 5px;
+                        // right: 4px;
                     }
                 }
                 ul {
@@ -53,8 +56,9 @@ header {
                     border: 3px solid white;
                     border-radius: 10%;
                     position: absolute;
+                    right: -15px;
                     z-index: 10;
-                    padding: 10px;
+                    padding: 2px;
                     a{
                         display: block;
                     }            
@@ -128,6 +132,9 @@ header {
                         display: none;
                     }
                 }
+                .btn-call:hover {
+                    background-color:#003806;
+                }
             }
         }
     }
@@ -142,12 +149,17 @@ header {
                 margin: auto;
             }
             .contacts-lang {
+                height: 57px;
                 .contacts {
                     .email, .call-number, .location {
                         a {
                             display: flex;
                             align-items: center;
                             text-decoration: none;
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
                             div {
                                 display: block;
                                 color: #fff;
@@ -159,7 +171,14 @@ header {
                             }
                         }
                     }
-                }           
+                }   
+                .language {
+                    width: 90px;
+                    top: 0;
+                    a {
+                    font-size: 14px;
+                    }
+                }  
             }            
         }
     
@@ -247,6 +266,9 @@ header {
         .top-nav-bar {
             .container {
                 width: 1418px;
+                .contacts-lang {
+                    height: 59px;
+                }
             }
         }
         // nav-bar

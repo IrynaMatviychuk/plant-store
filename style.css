@@ -7,6 +7,7 @@ header .top-nav-bar .container {
   padding: 0 15px;
 }
 header .top-nav-bar .contacts-lang {
+  height: 55px;
   padding: 20px 5px 15px 5px;
   display: flex;
   flex-wrap: wrap;
@@ -20,12 +21,13 @@ header .top-nav-bar .contacts-lang .contacts .email a div, header .top-nav-bar .
   display: none;
 }
 header .top-nav-bar .contacts-lang .contacts .email img, header .top-nav-bar .contacts-lang .contacts .call-number img, header .top-nav-bar .contacts-lang .contacts .location img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 header .top-nav-bar .contacts-lang .language {
-  width: 90px;
+  width: 52px;
   position: relative;
+  top: -3px;
 }
 header .top-nav-bar .contacts-lang .language a {
   display: block;
@@ -33,24 +35,25 @@ header .top-nav-bar .contacts-lang .language a {
   font-family: "Nunito", sans-serif;
   color: #fff;
   text-decoration: none;
+  font-size: 12px;
   line-height: 25px;
   padding-left: 5px;
   font-family: "Poppins", sans-serif;
 }
 header .top-nav-bar .contacts-lang .language a img {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 5px;
 }
 header .top-nav-bar .contacts-lang .language ul {
   display: none;
   border: 3px solid white;
   border-radius: 10%;
   position: absolute;
+  right: -15px;
   z-index: 10;
-  padding: 10px;
+  padding: 2px;
 }
 header .top-nav-bar .contacts-lang .language ul a {
   display: block;
@@ -119,16 +122,26 @@ header .nav-bar .container .menu-call .btn-call img {
 header .nav-bar .container .menu-call .btn-call a {
   display: none;
 }
+header .nav-bar .container .menu-call .btn-call:hover {
+  background-color: #003806;
+}
 
 @media (min-width: 1024px) {
   header .top-nav-bar .container {
     width: 970px;
     margin: auto;
   }
+  header .top-nav-bar .contacts-lang {
+    height: 57px;
+  }
   header .top-nav-bar .contacts-lang .contacts .email a, header .top-nav-bar .contacts-lang .contacts .call-number a, header .top-nav-bar .contacts-lang .contacts .location a {
     display: flex;
     align-items: center;
     text-decoration: none;
+  }
+  header .top-nav-bar .contacts-lang .contacts .email a img, header .top-nav-bar .contacts-lang .contacts .call-number a img, header .top-nav-bar .contacts-lang .contacts .location a img {
+    width: 25px;
+    height: 25px;
   }
   header .top-nav-bar .contacts-lang .contacts .email a div, header .top-nav-bar .contacts-lang .contacts .call-number a div, header .top-nav-bar .contacts-lang .contacts .location a div {
     display: block;
@@ -138,6 +151,13 @@ header .nav-bar .container .menu-call .btn-call a {
     font-weight: 400;
     font-size: 14px;
     padding-left: 5px;
+  }
+  header .top-nav-bar .contacts-lang .language {
+    width: 90px;
+    top: 0;
+  }
+  header .top-nav-bar .contacts-lang .language a {
+    font-size: 14px;
   }
   header .nav-bar {
     height: 80px;
@@ -213,6 +233,9 @@ header .nav-bar .container .menu-call .btn-call a {
   header .top-nav-bar .container {
     width: 1418px;
   }
+  header .top-nav-bar .container .contacts-lang {
+    height: 59px;
+  }
   header .nav-bar {
     height: 85px;
     padding: 15px 256px;
@@ -240,6 +263,342 @@ header .nav-bar .container .menu-call .btn-call a {
   }
   header .nav-bar .container .menu-call .btn-call a {
     font-size: 18px;
+  }
+}
+main .slider {
+  background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+  width: 100%;
+  height: 719px;
+  position: relative;
+}
+main .slider .container-fluid img {
+  width: 100%;
+}
+main .slider .slide-information {
+  padding: 35px 15px;
+}
+main .slider .slide-information .company-information .sub-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+main .slider .slide-information .company-information .sub-header .img {
+  width: 23.8px;
+  height: 19.89px;
+}
+main .slider .slide-information .company-information .sub-header div {
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212529;
+}
+main .slider .slide-information .company-information .header {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+}
+main .slider .slide-information .company-information .header .green-header {
+  color: green;
+}
+main .slider .slide-information .company-information .description {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212529;
+}
+main .slider .slide-information .company-information .btn-quate {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 303px;
+}
+main .slider .slide-information .company-information .btn-quate button {
+  background: #00730C;
+  width: 303px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #00730C;
+  color: #FFFFFF;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+main .slider .slide-information .company-information .btn-quate button:hover {
+  background: #003806;
+}
+main .slider .slide-information .company-information .btn-how-it-works {
+  width: 145px;
+  margin: auto;
+}
+main .slider .slide-information .company-information .btn-how-it-works button {
+  display: flex;
+  flex-direction: row;
+  width: 145px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #00730C;
+  background: none;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+main .slider .slide-information .company-information .btn-how-it-works button:hover {
+  text-decoration: underline;
+}
+main .slider .slide-information .company-information .btn-how-it-works img {
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+main .slider .slide-information .statistics {
+  margin-top: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+main .slider .slide-information .statistics .statistic-customers, main .slider .slide-information .statistics .statistic-gardens {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  gap: 8px;
+  width: 133px;
+  height: 32px;
+  background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+  border-radius: 32px;
+}
+main .slider .slide-information .statistics .statistic-customers .counter, main .slider .slide-information .statistics .statistic-gardens .counter {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #212529;
+}
+main .slider .slide-information .statistics .statistic-customers .statistic-name, main .slider .slide-information .statistics .statistic-gardens .statistic-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #212529;
+}
+main .slider .slide-information .statistics .statistic-team {
+  display: none;
+}
+main .slider .flow-plant {
+  width: 80px;
+  position: absolute;
+  left: 0.33%;
+  right: 80.53%;
+  top: 81.5%;
+  bottom: 2.09%;
+}
+
+@media (min-width: 1024px) {
+  main .slider {
+    height: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  main .slider .container-fluid img {
+    width: 500px;
+    position: relative;
+    top: 2px;
+  }
+  main .slider .slide-information {
+    width: 450px;
+    height: 340px;
+    padding: 10;
+  }
+  main .slider .slide-information .company-information {
+    margin-right: 30px;
+  }
+  main .slider .slide-information .company-information .sub-header div {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  main .slider .slide-information .company-information .header {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 29px;
+  }
+  main .slider .slide-information .company-information .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #676767;
+  }
+  main .slider .slide-information .company-information .action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main .slider .slide-information .company-information .action .btn-quate {
+    margin: 0;
+    width: 120px;
+  }
+  main .slider .slide-information .company-information .action .btn-quate button {
+    width: 120px;
+    font-size: 14px;
+  }
+  main .slider .slide-information .company-information .action .btn-how-it-works {
+    margin: 0 15px;
+  }
+  main .slider .slide-information .company-information .action .btn-how-it-works button {
+    font-size: 14px;
+  }
+  main .slider .slide-information .statistics {
+    margin-top: 40px;
+    justify-content: start;
+  }
+  main .slider .slide-information .statistics .statistic-customers, main .slider .slide-information .statistics .statistic-gardens, main .slider .slide-information .statistics .statistic-team {
+    display: flex;
+    margin-right: 10px;
+    gap: 10px;
+    padding: 0;
+    width: 120px;
+    background: none;
+  }
+  main .slider .slide-information .statistics .statistic-customers .counter, main .slider .slide-information .statistics .statistic-gardens .counter, main .slider .slide-information .statistics .statistic-team .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+    border-radius: 35px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #212529;
+  }
+  main .slider .slide-information .statistics .statistic-customers .statistic-name, main .slider .slide-information .statistics .statistic-gardens .statistic-name, main .slider .slide-information .statistics .statistic-team .statistic-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    color: #212529;
+  }
+  main .slider .flow-plant {
+    top: 220px;
+    width: 80px;
+  }
+  main .slider .flow-plant img {
+    width: 80px;
+  }
+}
+@media (min-width: 1920px) {
+  main .slider {
+    height: 719px;
+  }
+  main .slider .container-fluid img {
+    width: 1013px;
+  }
+  main .slider .slide-information {
+    width: 600px;
+    height: 719px;
+    padding: 133px 0 100px 0;
+  }
+  main .slider .slide-information .company-information {
+    margin-right: 80px;
+  }
+  main .slider .slide-information .company-information .sub-header div {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  main .slider .slide-information .company-information .header {
+    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 79px;
+  }
+  main .slider .slide-information .company-information .description {
+    width: 556px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .slider .slide-information .company-information .action .btn-quate {
+    width: 175px;
+  }
+  main .slider .slide-information .company-information .action .btn-quate button {
+    padding: 13px 35px;
+    gap: 10px;
+    width: 175px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  main .slider .slide-information .company-information .action .btn-how-it-works {
+    width: 158px;
+    margin: 0 30px;
+  }
+  main .slider .slide-information .company-information .action .btn-how-it-works button {
+    width: 158px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .slider .slide-information .company-information .action .btn-how-it-works button img {
+    right: -15px;
+    top: 10px;
+  }
+  main .slider .slide-information .statistics {
+    margin-top: 61px;
+  }
+  main .slider .slide-information .statistics .statistic-customers, main .slider .slide-information .statistics .statistic-gardens, main .slider .slide-information .statistics .statistic-team {
+    display: flex;
+    width: 149px;
+    height: 50px;
+  }
+  main .slider .slide-information .statistics .statistic-customers .counter, main .slider .slide-information .statistics .statistic-gardens .counter, main .slider .slide-information .statistics .statistic-team .counter {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  main .slider .slide-information .statistics .statistic-customers .statistic-name, main .slider .slide-information .statistics .statistic-gardens .statistic-name, main .slider .slide-information .statistics .statistic-team .statistic-name {
+    width: 89px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  main .slider .flow-plant {
+    top: 430px;
+  }
+  main .slider .flow-plant img {
+    width: 197px;
+    height: 278px;
   }
 }
 * {
