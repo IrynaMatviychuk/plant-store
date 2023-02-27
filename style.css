@@ -54,6 +54,7 @@ header .top-nav-bar .contacts-lang .language ul {
   right: -15px;
   z-index: 10;
   padding: 2px;
+  width: 80px;
 }
 header .top-nav-bar .contacts-lang .language ul a {
   display: block;
@@ -153,11 +154,15 @@ header .nav-bar .container .menu-call .btn-call:hover {
     padding-left: 5px;
   }
   header .top-nav-bar .contacts-lang .language {
-    width: 90px;
+    width: 100px;
     top: 0;
   }
   header .top-nav-bar .contacts-lang .language a {
     font-size: 14px;
+  }
+  header .top-nav-bar .contacts-lang .language ul {
+    right: 20px;
+    width: 90px;
   }
   header .nav-bar {
     height: 80px;
@@ -415,6 +420,69 @@ main .slider .flow-plant {
   top: 81.5%;
   bottom: 2.09%;
 }
+main .services .container {
+  width: 100%;
+}
+main .services .container h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  margin: 50px 54px 15px 54px;
+}
+main .services .container h2 span {
+  color: green;
+}
+main .services .container .services-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  margin: 0 15px 30px 16px;
+}
+main .services .container .services-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .services .container .services-cards .service {
+  width: 345px;
+  height: 116px;
+  margin: 0 15px 20px 15px;
+  padding: 20px;
+  background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+}
+main .services .container .services-cards .service a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+main .services .container .services-cards .service a img {
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+}
+main .services .container .services-cards .service a .service-text h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #212529;
+}
+main .services .container .services-cards .service a .service-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  margin: 10px 0 20px 20px;
+}
 
 @media (min-width: 1024px) {
   main .slider {
@@ -516,6 +584,60 @@ main .slider .flow-plant {
   main .slider .flow-plant img {
     width: 80px;
   }
+  main .services .container {
+    width: 770px;
+    margin: auto;
+  }
+  main .services .container h2 {
+    font-weight: 800;
+    font-size: 31px;
+    line-height: 47px;
+    margin: 70px 0 20px 0;
+    text-align: center;
+  }
+  main .services .container .services-description {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  main .services .container .services-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .services .container .services-cards .service {
+    width: 254px;
+    height: 253px;
+    margin: 0 15px 30px 15px;
+    padding: 30px 43px 59px 44px;
+  }
+  main .services .container .services-cards .service a {
+    display: flex;
+    flex-direction: column;
+  }
+  main .services .container .services-cards .service a img {
+    width: 56px;
+    height: 56px;
+    margin: auto;
+  }
+  main .services .container .services-cards .service a .service-text {
+    margin-top: 20px;
+  }
+  main .services .container .services-cards .service a .service-text h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  main .services .container .services-cards .service a .service-text p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+  main .services .container .services-cards .service:hover {
+    background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+  }
 }
 @media (min-width: 1920px) {
   main .slider {
@@ -599,6 +721,42 @@ main .slider .flow-plant {
   main .slider .flow-plant img {
     width: 197px;
     height: 278px;
+  }
+  main .services .container {
+    width: 1440px;
+    margin: auto;
+  }
+  main .services .container h2 {
+    font-size: 45px;
+    line-height: 61px;
+    margin: 100px 0 30px 0;
+  }
+  main .services .container .services-description {
+    font-size: 18px;
+    line-height: 30px;
+    width: 1136px;
+    margin: auto;
+  }
+  main .services .container .services-cards .service {
+    width: 330px;
+    height: 366px;
+    margin: 50px 30px 30px 0;
+    padding: 60px 43px 59px 44px;
+  }
+  main .services .container .services-cards .service a img {
+    width: 70px;
+    height: 70px;
+  }
+  main .services .container .services-cards .service a .service-text {
+    margin-top: 50px;
+  }
+  main .services .container .services-cards .service a .service-text h3 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  main .services .container .services-cards .service a .service-text p {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 * {

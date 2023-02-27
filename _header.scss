@@ -28,7 +28,6 @@ header {
                     }
                 }
             }
-
             .language {
                 width: 52px;
                 position: relative;
@@ -48,7 +47,6 @@ header {
                         height: 15px;
                         position: absolute;
                         top: 5px;
-                        // right: 4px;
                     }
                 }
                 ul {
@@ -59,6 +57,7 @@ header {
                     right: -15px;
                     z-index: 10;
                     padding: 2px;
+                    width: 80px;
                     a{
                         display: block;
                     }            
@@ -173,10 +172,15 @@ header {
                     }
                 }   
                 .language {
-                    width: 90px;
+                    width: 100px;
                     top: 0;
                     a {
                     font-size: 14px;
+                    }
+                    ul {
+                        right: 20px;
+                        width: 90px;
+
                     }
                 }  
             }            
@@ -205,7 +209,6 @@ header {
                     .navbar-menu{
                         display: flex;
                         align-items: center;
-
                         .btn-menu {
                             display: none;
                         }
