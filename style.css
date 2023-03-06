@@ -17,10 +17,14 @@ header .top-nav-bar .contacts-lang .contacts {
   display: flex;
   gap: 30px;
 }
-header .top-nav-bar .contacts-lang .contacts .email a div, header .top-nav-bar .contacts-lang .contacts .call-number a div, header .top-nav-bar .contacts-lang .contacts .location a div {
+header .top-nav-bar .contacts-lang .contacts .email a div,
+header .top-nav-bar .contacts-lang .contacts .call-number a div,
+header .top-nav-bar .contacts-lang .contacts .location a div {
   display: none;
 }
-header .top-nav-bar .contacts-lang .contacts .email img, header .top-nav-bar .contacts-lang .contacts .call-number img, header .top-nav-bar .contacts-lang .contacts .location img {
+header .top-nav-bar .contacts-lang .contacts .email img,
+header .top-nav-bar .contacts-lang .contacts .call-number img,
+header .top-nav-bar .contacts-lang .contacts .location img {
   width: 20px;
   height: 20px;
 }
@@ -67,7 +71,7 @@ header .top-nav-bar .contacts-lang .language:hover ul li:hover a {
   color: rgb(9, 18, 0);
 }
 header .nav-bar {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
   height: 70px;
   width: 100%;
@@ -107,7 +111,7 @@ header .nav-bar .container .menu-call .navbar-menu .menu-ul {
   display: none;
 }
 header .nav-bar .container .menu-call .btn-call {
-  background-color: #00730C;
+  background-color: #00730c;
   width: 40px;
   height: 34px;
   border-radius: 10px;
@@ -135,16 +139,22 @@ header .nav-bar .container .menu-call .btn-call:hover {
   header .top-nav-bar .contacts-lang {
     height: 57px;
   }
-  header .top-nav-bar .contacts-lang .contacts .email a, header .top-nav-bar .contacts-lang .contacts .call-number a, header .top-nav-bar .contacts-lang .contacts .location a {
+  header .top-nav-bar .contacts-lang .contacts .email a,
+  header .top-nav-bar .contacts-lang .contacts .call-number a,
+  header .top-nav-bar .contacts-lang .contacts .location a {
     display: flex;
     align-items: center;
     text-decoration: none;
   }
-  header .top-nav-bar .contacts-lang .contacts .email a img, header .top-nav-bar .contacts-lang .contacts .call-number a img, header .top-nav-bar .contacts-lang .contacts .location a img {
+  header .top-nav-bar .contacts-lang .contacts .email a img,
+  header .top-nav-bar .contacts-lang .contacts .call-number a img,
+  header .top-nav-bar .contacts-lang .contacts .location a img {
     width: 25px;
     height: 25px;
   }
-  header .top-nav-bar .contacts-lang .contacts .email a div, header .top-nav-bar .contacts-lang .contacts .call-number a div, header .top-nav-bar .contacts-lang .contacts .location a div {
+  header .top-nav-bar .contacts-lang .contacts .email a div,
+  header .top-nav-bar .contacts-lang .contacts .call-number a div,
+  header .top-nav-bar .contacts-lang .contacts .location a div {
     display: block;
     color: #fff;
     text-decoration: none;
@@ -230,7 +240,7 @@ header .nav-bar .container .menu-call .btn-call:hover {
     font-size: 16px;
     line-height: 24px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
   }
 }
@@ -324,7 +334,7 @@ main .slider .slide-information .company-information .btn-quate {
   width: 303px;
 }
 main .slider .slide-information .company-information .btn-quate button {
-  background: #00730C;
+  background: #00730c;
   width: 303px;
   height: 44px;
   border-radius: 5px;
@@ -332,8 +342,8 @@ main .slider .slide-information .company-information .btn-quate button {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 1px solid #00730C;
-  color: #FFFFFF;
+  border: 1px solid #00730c;
+  color: #ffffff;
   font-family: "Nunito";
   font-weight: 700;
   font-size: 16px;
@@ -356,7 +366,7 @@ main .slider .slide-information .company-information .btn-how-it-works button {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: #00730C;
+  color: #00730c;
   background: none;
   border: 0;
   position: relative;
@@ -378,7 +388,8 @@ main .slider .slide-information .statistics {
   flex-direction: row;
   justify-content: end;
 }
-main .slider .slide-information .statistics .statistic-customers, main .slider .slide-information .statistics .statistic-gardens {
+main .slider .slide-information .statistics .statistic-customers,
+main .slider .slide-information .statistics .statistic-gardens {
   margin-left: 12px;
   display: flex;
   flex-direction: row;
@@ -388,10 +399,11 @@ main .slider .slide-information .statistics .statistic-customers, main .slider .
   gap: 8px;
   width: 133px;
   height: 32px;
-  background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+  background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
   border-radius: 32px;
 }
-main .slider .slide-information .statistics .statistic-customers .counter, main .slider .slide-information .statistics .statistic-gardens .counter {
+main .slider .slide-information .statistics .statistic-customers .counter,
+main .slider .slide-information .statistics .statistic-gardens .counter {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -400,7 +412,8 @@ main .slider .slide-information .statistics .statistic-customers .counter, main 
   align-items: center;
   color: #212529;
 }
-main .slider .slide-information .statistics .statistic-customers .statistic-name, main .slider .slide-information .statistics .statistic-gardens .statistic-name {
+main .slider .slide-information .statistics .statistic-customers .statistic-name,
+main .slider .slide-information .statistics .statistic-gardens .statistic-name {
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -452,7 +465,7 @@ main .services .container .services-cards .service {
   height: 116px;
   margin: 0 15px 20px 15px;
   padding: 20px;
-  background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+  background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
 }
@@ -482,6 +495,126 @@ main .services .container .services-cards .service a .service-text p {
   line-height: 22px;
   color: #676767;
   margin: 10px 0 20px 20px;
+}
+main .experience {
+  margin-top: 30px;
+}
+main .experience .container {
+  width: 100%;
+  padding: 0 15px;
+}
+main .experience .container .experience-img {
+  width: 100%;
+  position: relative;
+}
+main .experience .container .experience-img .main-img {
+  position: relative;
+  margin: 15px 0px 25% 15px;
+  width: 85%;
+}
+main .experience .container .experience-img .main-img img {
+  width: 100%;
+}
+main .experience .container .experience-img .main-img::after {
+  content: "";
+  display: block;
+  background-color: #00730c;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: calc(100% - 115px + 15px);
+  height: calc(100% - 75px + 15px);
+  z-index: -10;
+}
+main .experience .container .experience-img .sub-img {
+  width: 65%;
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  border: 9px solid #ffffff;
+  border-radius: 5px;
+  z-index: 10;
+}
+main .experience .container .experience-img .sub-img img {
+  width: 100%;
+}
+main .experience .container .experience-content {
+  padding: 30px 0;
+}
+main .experience .container .experience-content .text h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+main .experience .container .experience-content .text h2 span {
+  color: #00730c;
+}
+main .experience .container .experience-content .text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #676767;
+}
+main .experience .container .experience-content .experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  margin: 40px 0 30px 0;
+}
+main .experience .container .experience-content .experience-cards .card {
+  width: calc(50% - 5px);
+  background: #ffffff;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+}
+main .experience .container .experience-content .experience-cards .card a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 94px;
+}
+main .experience .container .experience-content .experience-cards .card a .option-img {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+}
+main .experience .container .experience-content .experience-cards .card a .option-img img {
+  width: 100%;
+}
+main .experience .container .experience-content .experience-cards .card a .option-name {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #212529;
+}
+main .experience .container .experience-content .experience-action {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main .experience .container .experience-content .experience-action .btn-discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 40px;
+  background: #00730c;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -544,7 +677,9 @@ main .services .container .services-cards .service a .service-text p {
     margin-top: 40px;
     justify-content: start;
   }
-  main .slider .slide-information .statistics .statistic-customers, main .slider .slide-information .statistics .statistic-gardens, main .slider .slide-information .statistics .statistic-team {
+  main .slider .slide-information .statistics .statistic-customers,
+  main .slider .slide-information .statistics .statistic-gardens,
+  main .slider .slide-information .statistics .statistic-team {
     display: flex;
     margin-right: 10px;
     gap: 10px;
@@ -552,13 +687,15 @@ main .services .container .services-cards .service a .service-text p {
     width: 120px;
     background: none;
   }
-  main .slider .slide-information .statistics .statistic-customers .counter, main .slider .slide-information .statistics .statistic-gardens .counter, main .slider .slide-information .statistics .statistic-team .counter {
+  main .slider .slide-information .statistics .statistic-customers .counter,
+  main .slider .slide-information .statistics .statistic-gardens .counter,
+  main .slider .slide-information .statistics .statistic-team .counter {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+    background: linear-gradient(72.71deg, #00730c -83.5%, #f9f9f9 93.84%);
     border-radius: 35px;
     font-style: normal;
     font-weight: 700;
@@ -566,7 +703,9 @@ main .services .container .services-cards .service a .service-text p {
     line-height: 16px;
     color: #212529;
   }
-  main .slider .slide-information .statistics .statistic-customers .statistic-name, main .slider .slide-information .statistics .statistic-gardens .statistic-name, main .slider .slide-information .statistics .statistic-team .statistic-name {
+  main .slider .slide-information .statistics .statistic-customers .statistic-name,
+  main .slider .slide-information .statistics .statistic-gardens .statistic-name,
+  main .slider .slide-information .statistics .statistic-team .statistic-name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -636,7 +775,40 @@ main .services .container .services-cards .service a .service-text p {
     margin: 0;
   }
   main .services .container .services-cards .service:hover {
-    background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+    background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
+  }
+  main .experience {
+    margin-top: 50px;
+  }
+  main .experience .container {
+    width: 770px;
+    margin: auto;
+  }
+  main .experience .container .experience-img {
+    height: 800px;
+    margin-bottom: 80px;
+  }
+  main .experience .container .experience-img .main-img::after {
+    left: -15px;
+    top: -15px;
+  }
+  main .experience .container .experience-content .text h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  main .experience .container .experience-content .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main .experience .container .experience-content .experience-cards .card .option-name {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  main .experience .container .experience-content .experience-action {
+    margin-bottom: 30px;
+  }
+  main .experience .container .experience-content .experience-action .btn-discover {
+    height: 60px;
   }
 }
 @media (min-width: 1920px) {
@@ -698,18 +870,24 @@ main .services .container .services-cards .service a .service-text p {
   main .slider .slide-information .statistics {
     margin-top: 61px;
   }
-  main .slider .slide-information .statistics .statistic-customers, main .slider .slide-information .statistics .statistic-gardens, main .slider .slide-information .statistics .statistic-team {
+  main .slider .slide-information .statistics .statistic-customers,
+  main .slider .slide-information .statistics .statistic-gardens,
+  main .slider .slide-information .statistics .statistic-team {
     display: flex;
     width: 149px;
     height: 50px;
   }
-  main .slider .slide-information .statistics .statistic-customers .counter, main .slider .slide-information .statistics .statistic-gardens .counter, main .slider .slide-information .statistics .statistic-team .counter {
+  main .slider .slide-information .statistics .statistic-customers .counter,
+  main .slider .slide-information .statistics .statistic-gardens .counter,
+  main .slider .slide-information .statistics .statistic-team .counter {
     width: 50px;
     height: 50px;
     font-size: 15px;
     line-height: 20px;
   }
-  main .slider .slide-information .statistics .statistic-customers .statistic-name, main .slider .slide-information .statistics .statistic-gardens .statistic-name, main .slider .slide-information .statistics .statistic-team .statistic-name {
+  main .slider .slide-information .statistics .statistic-customers .statistic-name,
+  main .slider .slide-information .statistics .statistic-gardens .statistic-name,
+  main .slider .slide-information .statistics .statistic-team .statistic-name {
     width: 89px;
     font-weight: 700;
     font-size: 16px;
@@ -757,6 +935,92 @@ main .services .container .services-cards .service a .service-text p {
   main .services .container .services-cards .service a .service-text p {
     font-size: 16px;
     line-height: 28px;
+  }
+  main .experience {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+  main .experience .container {
+    width: 1440px;
+    display: flex;
+  }
+  main .experience .container .experience-img {
+    width: 693px;
+    height: 903px;
+    margin-bottom: 0;
+  }
+  main .experience .container .experience-img .main-img {
+    width: 601px;
+    height: 741px;
+  }
+  main .experience .container .experience-img .main-img::after {
+    content: "";
+    left: -20px;
+    top: -20px;
+  }
+  main .experience .container .experience-img .sub-img {
+    width: 456px;
+    height: 306px;
+    border: 15px solid #ffffff;
+    bottom: 25px;
+    border-radius: 10px;
+  }
+  main .experience .container .experience-content {
+    padding: 0px;
+    gap: 50px;
+    width: 690px;
+    height: 814px;
+    margin-left: 27px;
+  }
+  main .experience .container .experience-content .text h2 {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  main .experience .container .experience-content .text p {
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    line-height: 28px;
+    width: 672px;
+  }
+  main .experience .container .experience-content .experience-cards {
+    gap: 30px;
+    margin: 50px 0;
+  }
+  main .experience .container .experience-content .experience-cards .card {
+    width: calc(50% - 15px);
+    box-shadow: none;
+  }
+  main .experience .container .experience-content .experience-cards .card a {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 30px;
+    height: 97px;
+  }
+  main .experience .container .experience-content .experience-cards .card a .option-img {
+    width: 84px;
+    width: 67px;
+  }
+  main .experience .container .experience-content .experience-cards .card a .option-name {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+  }
+  main .experience .container .experience-content .experience-action {
+    justify-content: start;
+  }
+  main .experience .container .experience-content .experience-action .btn-discover {
+    gap: 10px;
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 * {

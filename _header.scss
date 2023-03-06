@@ -1,314 +1,315 @@
 header {
-         // top-nav-bar
-    .top-nav-bar {
-        font-family: "Poppins", sans-serif;
-        background-color: $color-header;
-        .container {
-            width: 100%;
-            padding: 0 15px;
-        }
-        .contacts-lang {
-            height: 55px;        
-            padding: 20px 5px 15px 5px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .contacts {
-                display: flex;
-                gap: 30px;
-                .email, .call-number, .location {
-                    a {
-                        div {
-                            display: none;
-                        }
-                    }
-                    img {
-                        width: 20px;
-                        height: 20px;
-                    }
-                }
-            }
-            .language {
-                width: 52px;
-                position: relative;
-                top: -3px;
-                a {
-                    display: block;
-                    position: relative;
-                    font-family: "Nunito", sans-serif;
-                    color: #fff;
-                    text-decoration: none;
-                    font-size: 12px;
-                    line-height: 25px;
-                    padding-left: 5px;
-                    font-family: "Poppins", sans-serif;
-                    img {
-                        width: 15px;
-                        height: 15px;
-                        position: absolute;
-                        top: 5px;
-                    }
-                }
-                ul {
-                    display: none;
-                    border: 3px solid white;
-                    border-radius: 10%;
-                    position: absolute;
-                    right: -15px;
-                    z-index: 10;
-                    padding: 2px;
-                    width: 80px;
-                    a{
-                        display: block;
-                    }            
-                }
-            }
-            .language:hover ul {
-                display: block;
-                background-color: $color-header; 
-                li:hover a {
-                    color: rgb(9, 18, 0);
-                }
-            }          
-        }            
+  // top-nav-bar
+  .top-nav-bar {
+    font-family: "Poppins", sans-serif;
+    background-color: $color-header;
+    .container {
+      width: 100%;
+      padding: 0 15px;
     }
-        // nav-bar
-    .nav-bar {
-        background-color: #FFFFFF;
-        box-shadow: 0px 2px 30px rgb(0 0 0 / 20%);
-        height: 70px;
-        width: 100%;
+    .contacts-lang {
+      height: 55px;
+      padding: 20px 5px 15px 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .contacts {
         display: flex;
-        align-items: center;
-        .container {
-            width: 100%;
+        gap: 30px;
+        .email,
+        .call-number,
+        .location {
+          a {
+            div {
+              display: none;
+            }
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+      .language {
+        width: 52px;
+        position: relative;
+        top: -3px;
+        a {
+          display: block;
+          position: relative;
+          font-family: "Nunito", sans-serif;
+          color: #fff;
+          text-decoration: none;
+          font-size: 12px;
+          line-height: 25px;
+          padding-left: 5px;
+          font-family: "Poppins", sans-serif;
+          img {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 5px;
+          }
+        }
+        ul {
+          display: none;
+          border: 3px solid white;
+          border-radius: 10%;
+          position: absolute;
+          right: -15px;
+          z-index: 10;
+          padding: 2px;
+          width: 80px;
+          a {
+            display: block;
+          }
+        }
+      }
+      .language:hover ul {
+        display: block;
+        background-color: $color-header;
+        li:hover a {
+          color: rgb(9, 18, 0);
+        }
+      }
+    }
+  }
+  // nav-bar
+  .nav-bar {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 20%);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .container {
+      width: 100%;
+      height: 40px;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        a {
+          display: block;
+          img {
+            width: 90px;
             height: 40px;
-            padding: 0 15px;
+          }
+        }
+      }
+      .menu-call {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 40px;
+        width: 110px;
+        .navbar-menu {
+          .btn-menu {
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            border: 0;
+            background-color: #fff;
+          }
+          .menu-ul {
+            display: none;
+          }
+        }
+        .btn-call {
+          background-color: #00730c;
+          width: 40px;
+          height: 34px;
+          border-radius: 10px;
+          padding: 7px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          a {
+            display: none;
+          }
+        }
+        .btn-call:hover {
+          background-color: #003806;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    // top-nav-bar
+    .top-nav-bar {
+      .container {
+        width: 970px;
+        margin: auto;
+      }
+      .contacts-lang {
+        height: 57px;
+        .contacts {
+          .email,
+          .call-number,
+          .location {
+            a {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              img {
+                width: 25px;
+                height: 25px;
+              }
+              div {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                padding-left: 5px;
+              }
+            }
+          }
+        }
+        .language {
+          width: 100px;
+          top: 0;
+          a {
+            font-size: 14px;
+          }
+          ul {
+            right: 20px;
+            width: 90px;
+          }
+        }
+      }
+    }
+
+    // nav-bar
+    .nav-bar {
+      height: 80px;
+      padding: 15px 0;
+      .container {
+        width: 970px;
+        padding: 0;
+        margin: auto;
+        .logo {
+          a {
+            img {
+              width: 100px;
+              height: 45px;
+            }
+          }
+        }
+        .menu-call {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 730px;
+          .navbar-menu {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            .logo{
-                a {
-                    display: block;
-                    img {
-                        width: 90px;
-                        height: 40px;
-                    }
-                }
+            .btn-menu {
+              display: none;
             }
-            .menu-call{
+            .menu-ul {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              gap: 40px;
+              width: 520px;
+              a {
                 display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
-                gap: 40px;
-                width: 110px;
-                .navbar-menu{
-                    .btn-menu{
-                    padding: 0;
-                    width: 30px;
-                    height: 30px;
-                    border: 0;
-                    background-color: #fff;
-                    }
-                    .menu-ul {
-                        display: none;
-                    }
+                flex-direction: row;
+                text-decoration: none;
+                font-family: "Nunito", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: capitalize;
+                color: #212529;
+                img {
+                  margin-left: 5px;
                 }
-                .btn-call {
-                    background-color: #00730C;
-                    width: 40px;
-                    height: 34px;
-                    border-radius: 10px; 
-                    padding: 7px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    img{
-                        width: 20px;    
-                        height: 20px;
-                    }
-                    a{
-                        display: none;
-                    }
-                }
-                .btn-call:hover {
-                    background-color:#003806;
-                }
+              }
             }
+          }
+          .btn-call {
+            width: 153px;
+            height: 45px;
+            border-radius: 5px;
+            padding: 10px 25px;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+            a {
+              display: block;
+              margin-left: 7px;
+              font-family: "Nunito", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              text-transform: capitalize;
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
         }
+      }
     }
+  }
 }
 
-@media(min-width: 1024px) {
-    header {
-            // top-nav-bar
-        .top-nav-bar {
-            .container {
-                width: 970px;
-                margin: auto;
-            }
-            .contacts-lang {
-                height: 57px;
-                .contacts {
-                    .email, .call-number, .location {
-                        a {
-                            display: flex;
-                            align-items: center;
-                            text-decoration: none;
-                            img {
-                                width: 25px;
-                                height: 25px;
-                            }
-                            div {
-                                display: block;
-                                color: #fff;
-                                text-decoration: none;
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 14px;
-                                padding-left: 5px;
-                            }
-                        }
-                    }
-                }   
-                .language {
-                    width: 100px;
-                    top: 0;
-                    a {
-                    font-size: 14px;
-                    }
-                    ul {
-                        right: 20px;
-                        width: 90px;
-
-                    }
-                }  
-            }            
+@media (min-width: 1920px) {
+  header {
+    .top-nav-bar {
+      .container {
+        width: 1418px;
+        .contacts-lang {
+          height: 59px;
         }
-    
-        // nav-bar
-        .nav-bar {
-            height: 80px;
-            padding: 15px 0;
-            .container {
-                width: 970px;
-                padding: 0;
-                margin: auto;
-                .logo{
-                    a {
-                        img {
-                            width: 100px;
-                            height: 45px;
-                        }
-                    }
-                }
-                .menu-call{
-                    flex-direction: row;
-                    justify-content: space-between;
-                    width: 730px;
-                    .navbar-menu{
-                        display: flex;
-                        align-items: center;
-                        .btn-menu {
-                            display: none;
-                        }
-                        .menu-ul {
-                            display: flex;
-                            justify-content: space-around;
-                            align-items: center;
-                            gap: 40px;
-                            width: 520px;                        
-                            a {
-                                display: flex;
-                                flex-direction: row;
-                                text-decoration: none;
-                                font-family: "Nunito", sans-serif;                            
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 14px;
-                                line-height: 20px;
-                                text-transform: capitalize;
-                                color: #212529;
-                                img {
-                                    margin-left: 5px;
-                                }
-                            }
-                        }
-                    }            
-                    .btn-call {
-                        width: 153px;
-                        height: 45px;
-                        border-radius: 5px; 
-                        padding: 10px 25px;
-                        img{
-                            width: 30px;    
-                            height: 30px;
-                        }
-                        a{
-                            display: block;
-                            margin-left: 7px;
-                            font-family: "Nunito", sans-serif;                            
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 16px;
-                            line-height: 24px;
-                            text-transform: capitalize;
-                            color: #FFFFFF;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-}
-
-
-@media(min-width: 1920px) {
-    header {
-        .top-nav-bar {
-            .container {
-                width: 1418px;
-                .contacts-lang {
-                    height: 59px;
-                }
+    // nav-bar
+    .nav-bar {
+      height: 85px;
+      padding: 15px 256px;
+      .container {
+        width: 1408px;
+        .logo {
+          a {
+            img {
+              width: 120px;
+              height: 55px;
             }
+          }
         }
-        // nav-bar
-        .nav-bar {
-            height: 85px;
-            padding: 15px 256px;
-            .container {
-                width: 1408px;
-                .logo{
-                    a {
-                        img {
-                            width: 120px;
-                            height: 55px;
-                        }
-                    }
-                }
-                .menu-call{
-                    width: 898px;
-                    .navbar-menu{                        
-                        .menu-ul {
-                            width: 627px;                      
-                            a {                                
-                                font-size: 16px;                                
-                            }
-                        }
-                    }            
-                    .btn-call {
-                        width: 170px;
-                        height: 50px;
-                        padding: 10px 35px;
-                        a{
-                            font-size: 18px;                    
-                        }
-                    }
-                }
+        .menu-call {
+          width: 898px;
+          .navbar-menu {
+            .menu-ul {
+              width: 627px;
+              a {
+                font-size: 16px;
+              }
             }
-        }    
-    }        
+          }
+          .btn-call {
+            width: 170px;
+            height: 50px;
+            padding: 10px 35px;
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
