@@ -232,7 +232,7 @@ main {
       }
     }
   }
-  //   experience
+  //  experience
   .experience {
     margin-top: 30px;
     .container {
@@ -351,6 +351,90 @@ main {
             text-transform: capitalize;
             color: #ffffff;
           }
+        }
+      }
+    }
+  }
+  // why-choose-us
+  .why-choose-us {
+    background: left -20px top 13px/140px no-repeat url(img/why-choose-us-background-1.png),
+      right -12px top -9px/170px no-repeat
+        url(img/why-choose-us-background-2.png),
+      #0c4b35;
+    .container {
+      width: 100%;
+      padding: 50px 15px;
+      .why-choose-us-img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .why-choose-us-content {
+        .text {
+          h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            color: #ffffff;
+          }
+          p {
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #ffffff;
+            margin: 15px 0 40px 0;
+          }
+        }
+      }
+      .why-choose-us-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        .option {
+          width: calc(50% - 10px);
+          display: flex;
+          justify-content: space-around;
+          .option-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 50%;
+          }
+          .option-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #ffffff;
+          }
+        }
+      }
+      .why-choose-us-action {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .btn-discover {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 167px;
+          height: 40px;
+          background: #00730c;
+          border-radius: 5px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          text-transform: capitalize;
+          color: #ffffff;
         }
       }
     }
@@ -527,7 +611,7 @@ main {
         }
       }
     }
-    //   experience
+    // experience
     .experience {
       margin-top: 50px;
       .container {
@@ -558,20 +642,87 @@ main {
                 font-size: 16px;
                 line-height: 21px;
               }
+              .option-name:hover {
+                font-size: 17px;
+                font-weight: 800;
+              }
             }
-          }            
+            .card:hover {
+              background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
+            }
+          }
           .experience-action {
             margin-bottom: 30px;
             .btn-discover {
-              height: 60px;
+              height: 40px;
             }
+            .btn-discover:hover {
+              background: #003806;
+            }
+          }
+        }
+      }
+    }
+    // why-choose-us
+    .why-choose-us {
+      background: left 3px top 70px/140px no-repeat
+          url(img/why-choose-us-background-1.png),
+        right 3px top 3px/170px no-repeat
+          url(img/why-choose-us-background-2.png),
+        #0c4b35;
+      .container {
+        width: 770px;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .why-choose-us-img {
+          width: 315px;
+          margin: 20px 0 30px 10px;
+          img {
+            width: 315px;
+          }
+        }
+        .why-choose-us-content {
+          .text {
+            h2 {
+              text-align: left;
+            }
+            p {
+              text-align: left;
+              margin: 10px 0 15px 0;
+              font-size: 15px;
+            }
+          }
+        }
+        .why-choose-us-options {
+          gap: 10px;
+          .option {
+            width: calc(50% - 5px);
+            justify-content: start;
+            .option-name {
+              margin-left: 10px;
+            }
+            .option-img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .why-choose-us-action {
+          margin-top: 15px;
+          justify-content: start;
+          .btn-discover {
+            height: 40px;
+          }
+          .btn-discover:hover {
+            background: #003806;
           }
         }
       }
     }
   }
 }
-
 
 @media (min-width: 1920px) {
   main {
@@ -709,7 +860,7 @@ main {
         }
       }
     }
-    //   experience
+    // experience
     .experience {
       margin-top: 70px;
       margin-bottom: 100px;
@@ -782,6 +933,10 @@ main {
                   line-height: 33px;
                   text-transform: capitalize;
                 }
+                .option-name:hover {
+                  font-size: 26px;
+                  font-weight: 900;
+                }
               }
             }
           }
@@ -794,6 +949,71 @@ main {
               font-size: 18px;
               line-height: 24px;
             }
+          }
+        }
+      }
+      background: -10.5% 10%/30% no-repeat
+        url(img/experience-background-img.png);
+    }
+    // why-choose-us
+    .why-choose-us {
+      background: left 5px top 95px/340px no-repeat
+          url(img/why-choose-us-background-1.png),
+        right 3px top 2px/260px no-repeat
+          url(img/why-choose-us-background-2.png),
+        #0c4b35;
+      .container {
+        width: 1440px;
+        height: 659px;
+        padding: 100px 0 104px 0;
+        .why-choose-us-img {
+          width: 672px;
+          height: 426px;
+          margin: 14px 1px 15px 83px;
+          img {
+            width: 672px;
+            height: 426px;
+          }
+        }
+        .why-choose-us-content {
+          width: 656px;
+          height: 347px;
+          .text {
+            h2 {
+              font-weight: 700;
+              font-size: 45px;
+              line-height: 61px;
+            }
+            p {
+              font-size: 18px;
+              line-height: 30px;
+              font-weight: 400;
+              margin: 30px 0 50px 0;
+            }
+          }
+        }
+        .why-choose-us-options {
+          width: 600px;
+          height: 86px;
+          .option {
+            .option-img {
+              width: 30px;
+              height: 30px;
+            }
+            .option-name {
+              font-size: 24px;
+              line-height: 33px;
+              margin-left: 20px;
+            }
+          }
+        }
+        .why-choose-us-action {
+          margin-top: 50px;
+          .btn-discover {
+            width: 190px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 24px;
           }
         }
       }
