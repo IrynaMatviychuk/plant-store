@@ -439,6 +439,148 @@ main {
       }
     }
   }
+  // working-process
+  .working-process {
+    .container {
+      width: 100%;
+      padding: 50px 15px 35px 15px;
+      .working-process-text {
+        h2 {
+          text-align: center;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 38px;
+          color: #212529;
+          span {
+            color: #00730c;
+          }
+        }
+        p {
+          text-align: center;
+          padding: 15px 0 30px 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #676767;
+        }
+      }
+      .working-process-cards {
+        width: $width-col-12;
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 345px;
+          height: 208px;
+          padding: 20px;
+          gap: 10px;
+          background: #ffffff;
+          box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+          border-radius: 10px;
+          background: left 245px top 58px/85px no-repeat
+            url(img/working-process-background.png);
+          a {
+            text-decoration: none;
+            .card-img {
+              display: flex;
+              justify-content: space-between;
+              height: 50px;
+              margin-bottom: 20px;
+              img {
+                width: 50px;
+                height: 50px;
+              }
+              p {
+                font-weight: 800;
+                font-size: 45px;
+                line-height: 61px;
+                display: flex;
+                align-items: center;
+                color: #e3e3e3;
+              }
+            }
+            .card-content {
+              height: 98px;
+              h3 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                text-transform: capitalize;
+                color: #212529;
+                margin-bottom: 10px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #676767;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // lawn-services
+  .lawn-services {
+    margin: 20px 15px 50px 15px;
+    .container {
+      width: 100%;
+      position: relative;
+      .lawn-services-images {
+        width: 345px;
+        .desktop-img {
+          display: none;
+        }
+        .mobile-img {
+          width: 100%;
+        }
+      }
+      .lawn-services-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        left: 11%;
+        top: 21%;
+        h2 {
+          width: 272px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 27px;
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: 30px;
+        }
+        .btn-call {
+          button {
+            width: 137px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            gap: 10px;
+            background: #ffffff;
+            box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+            border-radius: 5px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            div {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 19px;
+              color: #00730c;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -601,31 +743,59 @@ main {
                   font-size: 14px;
                   line-height: 24px;
                   margin: 0;
+                  text-align: center;
                 }
               }
             }
           }
           .service:hover {
-            background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
+            background: linear-gradient(
+              6.68deg,
+              #00730c 4.95%,
+              rgba(251, 246, 238, 0) 264.79%
+            );
+            .service-text {
+              h3,
+              p {
+                color: #ffffff;
+              }
+            }
           }
         }
       }
     }
     // experience
     .experience {
-      margin-top: 50px;
+      margin: 30px 0;
       .container {
         width: 770px;
         margin: auto;
         .experience-img {
           height: 800px;
-          margin-bottom: 80px;
+          margin-bottom: 30px;
+          .main-img {
+            margin-bottom: 30px;
+            img {
+              width: 85%;
+            }
+          }
+          .main-img::after {
+            width: calc(calc(100% - 240px + 15px));
+            height: calc(100% - 110px + 15px);
+          }
+          .sub-img {
+            bottom: 25px;
+            img {
+              width: 85%;
+            }
+          }
           .main-img::after {
             left: -15px;
             top: -15px;
           }
         }
         .experience-content {
+          padding: 0;
           .text {
             h2 {
               font-size: 30px;
@@ -648,16 +818,24 @@ main {
               }
             }
             .card:hover {
-              background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
+              background: linear-gradient(
+                6.68deg,
+                #00730c 4.95%,
+                rgba(251, 246, 238, 0) 264.79%
+              );
+              .option-name {
+                color: #ffffff;
+              }
             }
           }
           .experience-action {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+
             .btn-discover {
               height: 40px;
             }
             .btn-discover:hover {
-              background: #003806;
+              background: #0c4b35;
             }
           }
         }
@@ -716,7 +894,128 @@ main {
             height: 40px;
           }
           .btn-discover:hover {
-            background: #003806;
+            background: #0c4b35;
+          }
+        }
+      }
+    }
+    // working-process
+    .working-process {
+      .container {
+        width: 770px;
+        margin: auto;
+        padding: 0;
+        .working-process-text {
+          margin: 50px 0 20px 0;
+          h2 {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 15px;
+          }
+          p {
+            padding: 0;
+            font-size: 15px;
+            line-height: 24px;
+            width: 600px;
+            margin: auto;
+          }
+        }
+        .working-process-cards {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: center;
+          .card {
+            width: 300px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+            background: left 197px top 100px/90px no-repeat
+              url(img/working-process-background.png);
+            a {
+              .card-img {
+                height: 60px;
+                margin-bottom: 30px;
+                img {
+                  width: 60px;
+                  height: 60px;
+                }
+                p {
+                  font-size: 55px;
+                  line-height: 81px;
+                }
+              }
+              .card-content {
+                height: 110px;
+                h3 {
+                  font-size: 18px;
+                  line-height: 25px;
+                  margin-bottom: 20px;
+                  text-align: center;
+                }
+                p {
+                  font-size: 16px;
+                  line-height: 24px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .card:hover {
+            background: linear-gradient(
+                6.68deg,
+                #00730c 4.95%,
+                rgba(251, 246, 238, 0) 264.79%
+              ),
+              left 197px top 100px/90px no-repeat
+                url(img/working-process-background.png);
+            .card-content {
+              h3,
+              p {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+    // lawn-services
+    .lawn-services {
+      margin: 50px 0;
+      .container {
+        width: 770px;
+        margin: auto;
+        padding: 0;
+        .lawn-services-images {
+          width: 770px;
+          .desktop-img {
+            display: block;
+            width: 100%;
+          }
+          .mobile-img {
+            display: none;
+          }
+        }
+        .lawn-services-content {
+          flex-direction: row;
+          left: 42%;
+          top: 30%;
+          h2 {
+            width: 272px;
+            font-size: 19px;
+            line-height: 29px;
+            text-align: left;
+            margin-right: 20px;
+            margin-bottom: 0;
+          }
+          .btn-call {
+            button:hover {
+              background: #0c4b35;
+            }
           }
         }
       }
@@ -875,8 +1174,9 @@ main {
             width: 601px;
             height: 741px;
           }
-          .main-img::after {
-            content: "";
+          .main-img:after {
+            width: calc(calc(100% - 115px + 15px));
+            height: calc(100% - 130px + 15px);
             left: -20px;
             top: -20px;
           }
@@ -924,7 +1224,7 @@ main {
                 height: 97px;
                 .option-img {
                   width: 84px;
-                  width: 67px;
+                  height: 67px;
                 }
                 .option-name {
                   margin-left: 30px;
@@ -1014,6 +1314,110 @@ main {
             height: 50px;
             font-size: 18px;
             line-height: 24px;
+          }
+        }
+      }
+    }
+    // working-process
+    .working-process {
+      .container {
+        width: 1440px;
+        margin: auto;
+        padding: 0;
+        .working-process-text {
+          margin: 96px 0 50px 0;
+          h2 {
+            font-size: 45px;
+            line-height: 61px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 30px;
+            width: 1136px;
+          }
+        }
+        .working-process-cards {
+          .card {
+            width: 330px;
+            height: 408px;
+            padding: 50px 30px 70px 29px;
+            box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+            background: left 210px top 132px/90px no-repeat
+              url(img/working-process-background.png);
+            a {
+              .card-img {
+                height: 80px;
+                margin-bottom: 35px;
+                img {
+                  width: 70px;
+                  height: 70px;
+                }
+                p {
+                  font-size: 78px;
+                  line-height: 106px;
+                }
+              }
+              .card-content {
+                height: 173px;
+                h3 {
+                  font-size: 24px;
+                  line-height: 33px;
+                }
+                p {
+                  font-size: 18px;
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+          .card:hover {
+            background: linear-gradient(
+                6.68deg,
+                #00730c 4.95%,
+                rgba(251, 246, 238, 0) 264.79%
+              ),
+              left 210px top 132px/90px no-repeat
+                url(img/working-process-background.png);
+          }
+        }
+      }
+    }
+    // lawn-services
+    .lawn-services {
+      margin: 100px 0;
+      .container {
+        width: 1440px;
+        .lawn-services-images {
+          width: 1440px;
+          .desktop-img {
+            height: 247px;
+          }
+        }
+        .lawn-services-content {
+          width: 703px;
+          left: 47%;
+          top: 32%;
+          h2 {
+            width: 448px;
+            font-size: 33px;
+            line-height: 45px;
+            margin-right: 85px;
+          }
+          .btn-call {
+            button {
+              width: 170px;
+              height: 50px;
+              box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              div {
+                font-size: 18px;
+                line-height: 24px;
+              }
+            }
           }
         }
       }
