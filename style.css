@@ -825,6 +825,112 @@ main .lawn-services .container .lawn-services-content .btn-call button div {
   line-height: 19px;
   color: #00730c;
 }
+main .trained-staff {
+  height: 380px;
+}
+main .trained-staff .container {
+  width: 100%;
+  padding: 0 15px 50px 15px;
+}
+main .trained-staff .container .trained-staff-content .text h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 15px;
+}
+main .trained-staff .container .trained-staff-content .text h2 span {
+  color: #00730c;
+}
+main .trained-staff .container .trained-staff-content .text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+}
+main .trained-staff .container .trained-staff-content .btn-discover {
+  margin: 40px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+main .trained-staff .container .trained-staff-content .btn-discover button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 167px;
+  height: 40px;
+  background: #00730c;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+main .trained-staff .container .trained-staff-cards {
+  position: relative;
+}
+main .trained-staff .container .trained-staff-cards .staff-card {
+  width: 345px;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+main .trained-staff .container .trained-staff-cards .staff-card .option-image {
+  width: 100%;
+  overflow: hidden;
+}
+main .trained-staff .container .trained-staff-cards .staff-card .option-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+main .trained-staff .container .trained-staff-cards .staff-card .option-content {
+  min-width: 345px;
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+}
+main .trained-staff .container .trained-staff-cards .staff-card .option-content .option-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+main .trained-staff .container .trained-staff-cards .staff-card .option-content .option-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+main .trained-staff .container .trained-staff-cards .staff-card .option-content .option-links {
+  display: none;
+}
+main .trained-staff .container .trained-staff-cards .staff-card-active .option-content, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content {
+  height: 345px;
+}
+main .trained-staff .container .trained-staff-cards .staff-card-active .option-content .option-links, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content .option-links {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 10px;
+}
+main .trained-staff .container .trained-staff-cards .staff-card-active .option-content .option-links img, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content .option-links img {
+  width: 24px;
+  height: 24px;
+}
 
 @media (min-width: 1024px) {
   main .slider {
@@ -1030,7 +1136,7 @@ main .lawn-services .container .lawn-services-content .btn-call button div {
     line-height: 40px;
   }
   main .experience .container .experience-content .text p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
   }
   main .experience .container .experience-content .experience-cards .card .option-name {
@@ -1164,7 +1270,7 @@ main .lawn-services .container .lawn-services-content .btn-call button div {
     text-align: center;
   }
   main .working-process .container .working-process-cards .card a .card-content p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     text-align: center;
   }
@@ -1208,6 +1314,55 @@ main .lawn-services .container .lawn-services-content .btn-call button div {
   }
   main .lawn-services .container .lawn-services-content .btn-call button:hover {
     background: #0c4b35;
+  }
+  main .lawn-services .container .lawn-services-content .btn-call button:hover div {
+    color: white;
+  }
+  main .trained-staff .container {
+    width: 770px;
+    margin: auto;
+    padding: 0;
+  }
+  main .trained-staff .container .trained-staff-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  main .trained-staff .container .trained-staff-content .text {
+    width: 70%;
+  }
+  main .trained-staff .container .trained-staff-content .text h2 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  main .trained-staff .container .trained-staff-content .text p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+  }
+  main .trained-staff .container .trained-staff-content .btn-discover {
+    margin: 0;
+    display: flex;
+    align-items: end;
+  }
+  main .trained-staff .container .trained-staff-content .btn-discover button:hover {
+    background: #0c4b35;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card {
+    width: 370px;
+    height: 370px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card .option-image {
+    width: 370px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card .option-content {
+    min-width: 370px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card-active .option-content, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content {
+    height: 370px;
   }
 }
 @media (min-width: 1920px) {
@@ -1536,10 +1691,10 @@ main .lawn-services .container .lawn-services-content .btn-call button div {
     margin: 100px 0;
   }
   main .lawn-services .container {
-    width: 1440px;
+    width: 1410px;
   }
   main .lawn-services .container .lawn-services-images {
-    width: 1440px;
+    width: 1410px;
   }
   main .lawn-services .container .lawn-services-images .desktop-img {
     height: 247px;
@@ -1567,6 +1722,68 @@ main .lawn-services .container .lawn-services-content .btn-call button div {
   main .lawn-services .container .lawn-services-content .btn-call button div {
     font-size: 18px;
     line-height: 24px;
+  }
+  main .trained-staff .container {
+    width: 1410px;
+  }
+  main .trained-staff .container .trained-staff-content {
+    margin-bottom: 50px;
+  }
+  main .trained-staff .container .trained-staff-content .text {
+    width: 956px;
+  }
+  main .trained-staff .container .trained-staff-content .text h2 {
+    font-size: 45px;
+    line-height: 61px;
+    padding-bottom: 30px;
+  }
+  main .trained-staff .container .trained-staff-content .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .trained-staff .container .trained-staff-content .btn-discover {
+    margin-bottom: 8px;
+    margin-right: 23px;
+  }
+  main .trained-staff .container .trained-staff-content .btn-discover button {
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card {
+    width: 330px;
+    gap: 10px;
+    margin-bottom: 100px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card .option-image {
+    width: 330px;
+    height: 408px;
+    overflow: visible;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card .option-content {
+    min-width: 330px;
+    height: 90px;
+    border-radius: 10px;
+    bottom: 60px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card .option-content .option-name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card .option-content .option-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card-active .option-content, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content {
+    height: 408px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card-active .option-content .option-links, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content .option-links {
+    margin-top: 26px;
+  }
+  main .trained-staff .container .trained-staff-cards .staff-card-active .option-content .option-links img, main .trained-staff .container .trained-staff-cards .staff-card:hover .option-content .option-links img {
+    width: 30px;
+    height: 30px;
   }
 }
 * {
