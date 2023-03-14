@@ -583,7 +583,7 @@ main {
   }
   // trained-staff
   .trained-staff {
-    height: 380px;
+    // height: 380px;
     .container {
       width: 100%;
       padding: 0 15px 50px 15px;
@@ -678,9 +678,10 @@ main {
             .option-links {
               display: none;
             }
-          }          
+          }
         }
-        .staff-card-active, .staff-card:hover {
+        .staff-card-active,
+        .staff-card:hover {
           .option-content {
             height: 345px;
             .option-links {
@@ -691,6 +692,104 @@ main {
               img {
                 width: 24px;
                 height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // clients-saying
+  .clients-saying {
+    .container {
+      width: 100%;
+      .clients-saying-text {
+        background: #e6f6ea;
+        box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099),
+          inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+        height: 585px;
+        padding: 50px 15px 0 15px;
+        h2 {
+          text-align: center;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 38px;
+          color: #000000;
+          margin-bottom: 15px;
+          span {
+            color: #00730c;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #676767;
+        }
+      }
+      .clients-saying-cards {
+        position: relative;
+        bottom: 330px;
+        left: 13px;
+        z-index: 10;
+        width: 345px;
+        .card {
+          width: 345px;
+          height: 431px;
+          background: #ffffff;
+          box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          gap: 10px;
+          .option-image {
+            width: 100%;
+            margin-bottom: 43px;
+            display: flex;
+            justify-content: flex-start;
+            img {
+              width: 135px;
+              height: 183px;
+            }
+          }
+          .option-text {
+            .option-description {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #676767;
+              margin-bottom: 15px;
+            }
+            .name-and-stars {
+              display: flex;
+              justify-content: space-between;
+              height: 40px;
+              .name-and-position {
+                h3 {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 22px;
+                  text-transform: capitalize;
+                  color: #212529;
+                }
+                h4 {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #676767;
+                }
+              }
+              .stars {
+                width: 124px;
+                display: flex;
+                align-items: center;
+                img {
+                  width: 124px;
+                  height: 25px;
+                }
               }
             }
           }
@@ -1168,7 +1267,7 @@ main {
           .btn-discover {
             margin: 0;
             display: flex;
-            align-items: end;              
+            align-items: end;
           }
           .btn-discover {
             button:hover {
@@ -1179,25 +1278,109 @@ main {
         .trained-staff-cards {
           .staff-card {
             width: 370px;
-            height: 370px;          
+            height: 370px;
             .option-image {
               width: 370px;
             }
             .option-content {
-              min-width: 370px;          
-            }            
-          }
-          .staff-card-active,.staff-card:hover {
-            .option-content {
-              height: 370px;              
+              min-width: 370px;
             }
+          }
+          .staff-card-active,
+          .staff-card:hover {
+            .option-content {
+              height: 370px;
+            }
+          }
+        }
+      }
+    }
+    // clients-saying
+    .clients-saying {
+      background: #e6f6ea;
+      box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099),
+        inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+      .container {
+        width: 770px;
+        margin: auto;
+        padding: 0;
+        .clients-saying-text {
+          padding: 60px 0 30px 0;
+          background: none;
+          box-shadow: none;
+          width: 580px;
+          height: 180px;
+          h2 {
+            text-align: left;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 24px;
+            text-align: left;
+          }
+        }
+        .clients-saying-cards {
+          bottom: -45px;
+          left: 0;
+          width: 100%;
+          .card {
+            width: calc(50% - 20px);
+            height: 220px;
+            flex-direction: row;
+            .option-image {
+              width: 150px;
+              margin: 0;
+              img {
+                width: 100%;
+              }
+            }
+            .option-text {
+              width: 375px;
+              margin-left: 20px;
+              .option-description {
+                font-size: 15px;
+                line-height: 24px;
+                color: #676767;
+              }
+              .name-and-stars {
+                height: 33px;
+                .name-and-position {
+                  h3 {
+                    font-size: 18px;
+                    line-height: 23px;
+                  }
+                  h4 {
+                    font-size: 13px;
+                    line-height: 18px;
+                  }
+                }
+              }
+            }
+          }
+          .slick-prev:before,
+          .slick-next:before {
+            font-size: 30px;
+            line-height: 0;
+            color: #42875c;
+          }
+          .slick-prev {
+            left: 680px;
+            top: -40px;
+          }
+          .slick-next {
+            right: 25px;
+            top: -40px;
           }
         }
       }
     }
   }
 }
-    
+
 @media (min-width: 1920px) {
   main {
     // slider
@@ -1638,7 +1821,7 @@ main {
             }
             .option-content {
               min-width: 330px;
-              height: 90px;              
+              height: 90px;
               border-radius: 10px;
               bottom: 60px;
               .option-name {
@@ -1649,9 +1832,10 @@ main {
                 font-size: 18px;
                 line-height: 30px;
               }
-            }            
+            }
           }
-          .staff-card-active, .staff-card:hover {
+          .staff-card-active,
+          .staff-card:hover {
             .option-content {
               height: 408px;
               .option-links {
@@ -1662,6 +1846,83 @@ main {
                 }
               }
             }
+          }
+        }
+      }
+    }
+    // clients-saying
+    .clients-saying {
+      .container {
+        width: 1410px;
+        .clients-saying-text {
+          padding: 100px 0 0 0;
+          width: 956px;
+          height: 151px;
+          h2 {
+            font-size: 45px;
+            line-height: 62px;
+            margin-bottom: 30px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        .clients-saying-cards {
+          bottom: -160px;
+          .card {
+            margin-bottom: 100px;
+            width: 690px;
+            height: 341px;
+            padding: 25px;
+            margin-right: 20px;
+            .option-image {
+              width: 193px;
+              height: 266px;
+              margin: 7px 31px 8px 0;
+              img {
+                width: 193px;
+                height: 266px;
+              }
+            }
+            .option-text {
+              width: 415px;
+              height: 264px;
+              margin: 13px 1px 14px 0;
+              .option-description {
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 27px;
+              }
+              .name-and-stars {
+                width: 415px;
+                height: 63px;
+                .name-and-position {
+                  h3 {
+                    font-size: 24px;
+                    line-height: 33px;
+                  }
+                  h4 {
+                    font-size: 14px;
+                    line-height: 25px;
+                  }
+                }
+              }
+            }
+          }
+          .slick-prev:before,
+          .slick-next:before {
+            font-size: 30px;
+            line-height: 0;
+            color: #42875c;
+          }
+          .slick-prev {
+            left: 680px;
+            top: -40px;
+          }
+          .slick-next {
+            right: 25px;
+            top: -40px;
           }
         }
       }
