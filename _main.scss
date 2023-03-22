@@ -703,6 +703,7 @@ main {
   .clients-saying {
     .container {
       width: 100%;
+      position: relative;
       .clients-saying-text {
         background: #e6f6ea;
         box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099),
@@ -729,9 +730,9 @@ main {
         }
       }
       .clients-saying-cards {
-        position: relative;
-        bottom: 330px;
-        left: 13px;
+        position: absolute;
+        bottom: -130px;
+        left: 15px;
         z-index: 10;
         width: 345px;
         .card {
@@ -794,6 +795,96 @@ main {
             }
           }
         }
+      }
+    }
+  }
+  // faq
+  .faq {
+    margin-top: 160px;
+    .container {
+      width: 100%;
+      .faq-content {
+        .text {
+          margin-bottom: 42px;
+          h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            color: #212529;
+            margin-bottom: 15px;
+            span {
+              color: #00730c;
+              display: block;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #676767;
+            padding: 15px;
+          }
+        }
+        .question-and-answer {
+          .que {
+            margin-top: 20px;
+            .accordion {
+              display: flex;
+              position: relative;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              color: #212529;
+              padding: 12px 0px 12px 20px;
+              border-radius: 3px;
+              cursor: pointer;
+              transition: 0.1s ease-in-out;
+              background: right 20px top 50%/20px 20px no-repeat
+                  url(img/plus-icon.svg),
+                #fff8f1;
+              h5 {
+                width: calc(100% - 52px);
+                max-width: calc(100% - 52px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+            .panel {
+              display: none;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+              color: #676767;
+              padding: 20px 15px 0px 15px;
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #676767;
+              }
+            }
+            .active {
+              background-color: #00730c;
+              color: #ffffff;
+              background-image: url(img/minus-icon.svg);
+            }
+            .active-ellipsis::after {
+              content: "?";
+              height: 19px;
+              padding-right: 50px;
+              margin-left: -2px;
+            }
+            .show {
+              display: block !important;
+            }
+          }
+        }
+      }
+      .faq-img {
+        display: none;
       }
     }
   }
@@ -1298,6 +1389,7 @@ main {
     // clients-saying
     .clients-saying {
       background: #e6f6ea;
+      height: 450px;
       box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099),
         inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
       .container {
@@ -1324,7 +1416,7 @@ main {
           }
         }
         .clients-saying-cards {
-          bottom: -45px;
+          bottom: -300px;
           left: 0;
           width: 100%;
           .card {
@@ -1374,6 +1466,28 @@ main {
           .slick-next {
             right: 25px;
             top: -40px;
+          }
+        }
+      }
+    }
+    // faq
+    .faq {
+      margin-top: 80px;
+      .container {
+        width: 770px;
+        margin: auto;
+        .faq-content {
+          .text {
+            h2 {
+              display: flex;
+              justify-content: center;
+              span {
+                margin-left: 5px;
+              }
+            }
+            p {
+              padding: 0;
+            }
           }
         }
       }
@@ -1852,6 +1966,7 @@ main {
     }
     // clients-saying
     .clients-saying {
+      height: 585px;
       .container {
         width: 1410px;
         .clients-saying-text {
@@ -1869,7 +1984,7 @@ main {
           }
         }
         .clients-saying-cards {
-          bottom: -160px;
+          bottom: -580px;
           .card {
             margin-bottom: 100px;
             width: 690px;
@@ -1923,6 +2038,56 @@ main {
           .slick-next {
             right: 25px;
             top: -40px;
+          }
+        }
+      }
+    }
+    // faq
+    .faq {
+      margin-top: 100px;
+      .container {
+        width: 1410px;
+        display: flex;
+        .faq-content {
+          // width: 60%;
+          .text {
+            margin-bottom: 0;
+            h2 {
+              font-weight: 800;
+              font-size: 45px;
+              line-height: 61px;
+              margin-bottom: 30px;
+              justify-content: flex-start;
+            }
+            p {
+              font-size: 18px;
+              line-height: 30px;
+              text-align: left;
+            }
+          }
+          .question-and-answer {
+            .que {
+              margin-top: 30px;
+              .accordion {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                border-radius: 5px;
+              }
+              .panel {
+                display: none;
+                p {
+                  font-size: 16px;
+                  line-height: 28px;
+                }
+              }
+            }
+          }
+        }
+        .faq-img {
+          display: block;
+          img {
+            width: 507px;
           }
         }
       }

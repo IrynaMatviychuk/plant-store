@@ -933,6 +933,7 @@ main .trained-staff .container .trained-staff-cards .staff-card:hover .option-co
 }
 main .clients-saying .container {
   width: 100%;
+  position: relative;
 }
 main .clients-saying .container .clients-saying-text {
   background: #e6f6ea;
@@ -959,9 +960,9 @@ main .clients-saying .container .clients-saying-text p {
   color: #676767;
 }
 main .clients-saying .container .clients-saying-cards {
-  position: relative;
-  bottom: 330px;
-  left: 13px;
+  position: absolute;
+  bottom: -130px;
+  left: 15px;
   z-index: 10;
   width: 345px;
 }
@@ -1020,6 +1021,89 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
 main .clients-saying .container .clients-saying-cards .card .option-text .name-and-stars .stars img {
   width: 124px;
   height: 25px;
+}
+main .faq {
+  margin-top: 160px;
+}
+main .faq .container {
+  width: 100%;
+}
+main .faq .container .faq-content .text {
+  margin-bottom: 42px;
+}
+main .faq .container .faq-content .text h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #212529;
+  margin-bottom: 15px;
+}
+main .faq .container .faq-content .text h2 span {
+  color: #00730c;
+  display: block;
+}
+main .faq .container .faq-content .text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+  padding: 15px;
+}
+main .faq .container .faq-content .question-and-answer .que {
+  margin-top: 20px;
+}
+main .faq .container .faq-content .question-and-answer .que .accordion {
+  display: flex;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212529;
+  padding: 12px 0px 12px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  background: right 20px top 50%/20px 20px no-repeat url(img/plus-icon.svg), #fff8f1;
+}
+main .faq .container .faq-content .question-and-answer .que .accordion h5 {
+  width: calc(100% - 52px);
+  max-width: calc(100% - 52px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main .faq .container .faq-content .question-and-answer .que .panel {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  padding: 20px 15px 0px 15px;
+}
+main .faq .container .faq-content .question-and-answer .que .panel p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+main .faq .container .faq-content .question-and-answer .que .active {
+  background-color: #00730c;
+  color: #ffffff;
+  background-image: url(img/minus-icon.svg);
+}
+main .faq .container .faq-content .question-and-answer .que .active-ellipsis::after {
+  content: "?";
+  height: 19px;
+  padding-right: 50px;
+  margin-left: -2px;
+}
+main .faq .container .faq-content .question-and-answer .que .show {
+  display: block !important;
+}
+main .faq .container .faq-img {
+  display: none;
 }
 
 @media (min-width: 1024px) {
@@ -1457,6 +1541,7 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
   }
   main .clients-saying {
     background: #e6f6ea;
+    height: 450px;
     box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
   }
   main .clients-saying .container {
@@ -1484,7 +1569,7 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
     text-align: left;
   }
   main .clients-saying .container .clients-saying-cards {
-    bottom: -45px;
+    bottom: -300px;
     left: 0;
     width: 100%;
   }
@@ -1533,6 +1618,23 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
   main .clients-saying .container .clients-saying-cards .slick-next {
     right: 25px;
     top: -40px;
+  }
+  main .faq {
+    margin-top: 80px;
+  }
+  main .faq .container {
+    width: 770px;
+    margin: auto;
+  }
+  main .faq .container .faq-content .text h2 {
+    display: flex;
+    justify-content: center;
+  }
+  main .faq .container .faq-content .text h2 span {
+    margin-left: 5px;
+  }
+  main .faq .container .faq-content .text p {
+    padding: 0;
   }
 }
 @media (min-width: 1920px) {
@@ -1958,6 +2060,9 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
     width: 30px;
     height: 30px;
   }
+  main .clients-saying {
+    height: 585px;
+  }
   main .clients-saying .container {
     width: 1410px;
   }
@@ -1976,7 +2081,7 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
     line-height: 30px;
   }
   main .clients-saying .container .clients-saying-cards {
-    bottom: -160px;
+    bottom: -580px;
   }
   main .clients-saying .container .clients-saying-cards .card {
     margin-bottom: 100px;
@@ -2029,6 +2134,50 @@ main .clients-saying .container .clients-saying-cards .card .option-text .name-a
   main .clients-saying .container .clients-saying-cards .slick-next {
     right: 25px;
     top: -40px;
+  }
+  main .faq {
+    margin-top: 100px;
+  }
+  main .faq .container {
+    width: 1410px;
+    display: flex;
+  }
+  main .faq .container .faq-content .text {
+    margin-bottom: 0;
+  }
+  main .faq .container .faq-content .text h2 {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+  main .faq .container .faq-content .text p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+  }
+  main .faq .container .faq-content .question-and-answer .que {
+    margin-top: 30px;
+  }
+  main .faq .container .faq-content .question-and-answer .que .accordion {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    border-radius: 5px;
+  }
+  main .faq .container .faq-content .question-and-answer .que .panel {
+    display: none;
+  }
+  main .faq .container .faq-content .question-and-answer .que .panel p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  main .faq .container .faq-img {
+    display: block;
+  }
+  main .faq .container .faq-img img {
+    width: 507px;
   }
 }
 * {
