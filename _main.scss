@@ -1031,6 +1031,22 @@ main {
       }
     }
   }
+  // partners
+  .partners {
+    background-color: #FFFFFF;
+    height: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      display: block;
+      height: 100%;
+      mix-blend-mode: luminosity;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1649,6 +1665,12 @@ main {
           margin: 20px 0 15px 0;
         }
       }
+    }
+    // partners
+    .partners {
+      display: flex;
+      justify-content: center;    
+      margin: 60px 0 80px 0;
     }
   }
 }
@@ -2318,6 +2340,12 @@ main {
           }          
         }
       }
+    }
+    // partners
+    .partners {
+      height: 100px;
+      margin: 100px 0 170px 0;
+      gap: 100px;
     }
   }
 }
