@@ -52,8 +52,7 @@ $('.clients-saying-cards').slick({
 });
 
 
-/*accordions */
-
+// Accordions
 let accordions = document.querySelectorAll(".accordion");
 
 accordions.forEach(item => {
@@ -83,3 +82,24 @@ function addQueMarkToEllipsis(item) {
     item.classList.remove("active-ellipsis");
   }
 }
+
+// Slider-3
+$('.insights-and-articles-content').slick({
+  slidesToShow: 3,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1920,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        autoplay: true,
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
